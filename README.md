@@ -1,7 +1,7 @@
-<h1 align="center">UR-Haskell - Readme</h1>
+<h1 align="center">UR-Prolog - Readme</h1>
 <p align="center">
   <strong>
-    Solutions to Haskell exercises from my studies at <a href="https://www.ur.edu.pl/pl/kolegia/kolegium-nauk-przyrodniczych">University of Rzeszów (UR)</a>
+    Solutions to Prolog exercises from my studies at <a href="https://www.ur.edu.pl/pl/kolegia/kolegium-nauk-przyrodniczych">University of Rzeszów (UR)</a>
   </strong>
 </p>
 <div align="center">
@@ -29,7 +29,7 @@ The course covered the basics of the functional programming language Haskell and
 <br>
 
 ## Technologies :hammer_and_wrench:
-- [Haskell](https://www.haskell.org)
+- [SWI Prolog](https://www.swi-prolog.org)
 - [ConTEXT Editor](https://www.contexteditor.org)
 - Windows
 
