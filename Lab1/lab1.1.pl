@@ -2,8 +2,8 @@
 
 1.1 Run the SWI shell and load the file. By asking the right questions, check:
 
-    - Is Tomek a man?
-    - Is Tomek a woman?
+    - Is Tomek a male?
+    - Is Tomek a female?
     - Who is Max's parent?
     - Whose parent is Max?
     - Is Ola a mother?
@@ -12,8 +12,8 @@
     - Does Ania have a mother and a father?
     - Who has a grandson? (without adding new rules)
     - Who has a great-grandson? (without adding new rules)
-    - Is Ola a woman?
-    - Who is the man?
+    - Is Ola a female?
+    - Who is the male?
     - Who is Max's mother?
     - Who is Max's father?
     - Who has a mother and a father?
@@ -30,10 +30,10 @@ parent(max, ania).
 parent(max, kasia).
 parent(kasia, radek).
  
-woman(ola).
-woman(lila).
-woman(kasia).
-woman(ania).
+female(ola).
+female(lila).
+female(kasia).
+female(ania).
 
 male(tomek).
 male(max).
@@ -41,7 +41,7 @@ male(radek).
  
 mother(X,Y) :-
   parent(X,Y),
-  woman(X).
+  female(X).
  
 father(X,Y) :-
   parent(X,Y),
@@ -49,16 +49,16 @@ father(X,Y) :-
 
 /*
 
-Is Tomek a man?
+Is Tomek a male?
 
 1 ?- male(tomek).
 true.
 
 ----------------------------
 
-Is Tomek a woman?
+Is Tomek a female?
 
-2 ?- woman(tomek).
+2 ?- female(tomek).
 false.
 
 ----------------------------
@@ -133,14 +133,14 @@ false.
 
 ----------------------------
 
-Is Ola a woman?
+Is Ola a female?
 
-11 ?- woman(ola).
+11 ?- female(ola).
 true.
 
 ----------------------------
 
-Who is the man?
+Who is the male?
 
 12 ?- male(X).
 X = tomek ;
@@ -174,7 +174,7 @@ false.
 
 Who has a granddaughter? (without adding new rules)
 
-16 ?- parent(X, Y), parent(Y, Z), woman(Z).
+16 ?- parent(X, Y), parent(Y, Z), female(Z).
 X = ola,
 Y = max,
 Z = ania ;
@@ -193,7 +193,7 @@ false.
 
 Who has a great-granddaughter? (without adding new rules)
 
-17 ?- parent(X, Y), parent(Y, Z), parent(Z, A), woman(A).
+17 ?- parent(X, Y), parent(Y, Z), parent(Z, A), female(A).
 false.
 
 */
