@@ -24,7 +24,7 @@
 ## About :dart:
 These are my solutions to laboratory exercises carried out as part of the course "Języki i paradygmaty programowania" (Programming languages ​​and paradigms) in the Computer Science program at UR. 
 
-The course covered the basics of the functional programming language Haskell ([UR-Haskell](https://github.com/Pasek108/UR-Haskell)) and the logic programming language Prolog. The acquired knowledge was tested in the form of a test.
+The course covered the basics of the functional programming language Haskell ([UR-Haskell](https://github.com/Pasek108/UR-Haskell)) and the logic programming language Prolog. The acquired knowledge was tested in the form of a practical test.
 
 <br>
 
