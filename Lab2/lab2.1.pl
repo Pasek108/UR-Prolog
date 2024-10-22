@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-2.1 Add rules to the Knowledge Base from task 7.1:
+2.1 Add rules to the Knowledge Base from task 1.1:
 
     - sister(X, Y) - succeeds if X is Y's sister
     - pair(X, Y) - succeeds if X is a female, Y is a male and they have a child

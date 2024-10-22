@@ -3,19 +3,18 @@
 1.3 Prepare a knowledge base in Prolog (zabytki.pl file) with the following 
     information:
 
-    - Pañstwa: Polska, Niemcy, Francja, W³ochy, Hiszpania, Wielka Brytania
-    - Miasta: Warszawa, Kraków, Berlin, Pary¿, Rzym, Wenecja, Barcelona, Madryt,
+    - Countries: Polska, Niemcy, Francja, W³ochy, Hiszpania, Wielka Brytania
+    - Cities: Warszawa, Kraków, Berlin, Pary¿, Rzym, Wenecja, Barcelona, Madryt,
       Londyn
-    - Zabytki: Pa³ac w Wilanowie, Kolumna Zygmunta III Wazy, Wawel, Sukiennice, 
-      Koœció³ Mariacki, Brama Brandenburska, Reichstag, Wie¿a Eiffla, 
-      Katedra Notre-Dame, Pa³ac Elizejski, Bazylika œw. Paw³a za Murami, 
-      Koloseum, Zamek Œwiêtego Anio³a, Bazylika œw. Marka, Pa³ac Do¿ów, 
-      Sagrada Familia, Pa³ac Kryszta³owy, Tower Bridge, Pa³ac Buckingham, 
-      Katedra Œwiêtego Paw³a
+    - Monuments: Pa³ac w Wilanowie, Kolumna Zygmunta III Wazy, Wawel, Koloseum,
+      Zamek Œwiêtego Anio³a, Koœció³ Mariacki, Brama Brandenburska, Reichstag,
+      Katedra Notre-Dame, Katedra Œwiêtego Paw³a, Bazylika œw. Paw³a za Murami,
+      Wie¿a Eiffla, Bazylika œw. Marka, Pa³ac Do¿ów, Tower Bridge, Sukiennice,
+      Pa³ac Kryszta³owy, Pa³ac Buckingham, Sagrada Familia, Pa³ac Elizejski
 
 Organize the knowledge base in such a way that it stores information about what 
 is a country, what is a city, what is a monument, and the city-state, 
-monument-city, state-state relationships (in the sense of neighborhood - we 
+monument-city, state-state relationships (in the sense of neighborhood - we
 assume that Great Britain neighbors France).
 
 By asking the right questions, check:
@@ -33,190 +32,190 @@ By asking the right questions, check:
 
 *******************************************************************************/
 
-panstwo('Polska').
-panstwo('Niemcy').
-panstwo('Francja').
-panstwo('W³ochy').
-panstwo('Hiszpania').
-panstwo('Wielka Brytania').
+country('Polska').
+country('Niemcy').
+country('Francja').
+country('W³ochy').
+country('Hiszpania').
+country('Wielka Brytania').
 
-miasto('Warszawa').
-miasto('Kraków').
-miasto('Berlin').
-miasto('Pary¿').
-miasto('Rzym').
-miasto('Wenecja').
-miasto('Barcelona').
-miasto('Madryt').
-miasto('Londyn').
+town('Warszawa').
+town('Kraków').
+town('Berlin').
+town('Pary¿').
+town('Rzym').
+town('Wenecja').
+town('Barcelona').
+town('Madryt').
+town('Londyn').
 
-polozenie('Warszawa', 'Polska').
-polozenie('Kraków', 'Polska').
-polozenie('Berlin', 'Niemcy').
-polozenie('Pary¿', 'Francja').
-polozenie('Rzym', 'W³ochy').
-polozenie('Wenecja', 'W³ochy').
-polozenie('Barcelona', 'Hiszpania').
-polozenie('Madryt', 'Hiszpania').
-polozenie('Londyn', 'Wielka Brytania').
+location('Warszawa', 'Polska').
+location('Kraków', 'Polska').
+location('Berlin', 'Niemcy').
+location('Pary¿', 'Francja').
+location('Rzym', 'W³ochy').
+location('Wenecja', 'W³ochy').
+location('Barcelona', 'Hiszpania').
+location('Madryt', 'Hiszpania').
+location('Londyn', 'Wielka Brytania').
 
-zabytek('Pa³ac w Wilanowie').
-zabytek('Kolumna Zygmunta III Wazy').
-zabytek('Wawel').
-zabytek('Sukiennice').
-zabytek('Koœció³ Mariacki').
-zabytek('Brama Brandenburska').
-zabytek('Reichstag').
-zabytek('Wie¿a Eiffla').
-zabytek('Katedra Notre-Dame').
-zabytek('Pa³ac Elizejski').
-zabytek('Bazylika œw. Paw³a za Murami').
-zabytek('Koloseum').
-zabytek('Zamek Œwiêtego Anio³a').
-zabytek('Bazylika œw. Marka').
-zabytek('Pa³ac Do¿ów').
-zabytek('Sagrada Familia').
-zabytek('Pa³ac Kryszta³owy').
-zabytek('Tower Bridge').
-zabytek('Pa³ac Buckingham').
-zabytek('Katedra Œwiêtego Paw³a').
+monument('Pa³ac w Wilanowie').
+monument('Kolumna Zygmunta III Wazy').
+monument('Wawel').
+monument('Sukiennice').
+monument('Koœció³ Mariacki').
+monument('Brama Brandenburska').
+monument('Reichstag').
+monument('Wie¿a Eiffla').
+monument('Katedra Notre-Dame').
+monument('Pa³ac Elizejski').
+monument('Bazylika œw. Paw³a za Murami').
+monument('Koloseum').
+monument('Zamek Œwiêtego Anio³a').
+monument('Bazylika œw. Marka').
+monument('Pa³ac Do¿ów').
+monument('Sagrada Familia').
+monument('Pa³ac Kryszta³owy').
+monument('Tower Bridge').
+monument('Pa³ac Buckingham').
+monument('Katedra Œwiêtego Paw³a').
 
-gdzie('Pa³ac w Wilanowie', 'Warszawa').
-gdzie('Kolumna Zygmunta III Wazy', 'Warszawa').
-gdzie('Wawel', 'Kraków').
-gdzie('Sukiennice', 'Kraków').
-gdzie('Koœció³ Mariacki', 'Kraków').
-gdzie('Brama Brandenburska', 'Berlin').
-gdzie('Reichstag', 'Berlin').
-gdzie('Wie¿a Eiffla', 'Pary¿').
-gdzie('Katedra Notre-Dame', 'Pary¿').
-gdzie('Pa³ac Elizejski', 'Pary¿').
-gdzie('Bazylika œw. Paw³a za Murami', 'Rzym').
-gdzie('Koloseum', 'Rzym').
-gdzie('Zamek Œwiêtego Anio³a', 'Rzym').
-gdzie('Bazylika œw. Marka', 'Wenecja').
-gdzie('Pa³ac Do¿ów', 'Wenecja').
-gdzie('Sagrada Familia', 'Barcelona').
-gdzie('Pa³ac Kryszta³owy', 'Madryt').
-gdzie('Tower Bridge', 'Londyn').
-gdzie('Pa³ac Buckingham', 'Londyn').
-gdzie('Katedra Œwiêtego Paw³a', 'Londyn').
+where('Pa³ac w Wilanowie', 'Warszawa').
+where('Kolumna Zygmunta III Wazy', 'Warszawa').
+where('Wawel', 'Kraków').
+where('Sukiennice', 'Kraków').
+where('Koœció³ Mariacki', 'Kraków').
+where('Brama Brandenburska', 'Berlin').
+where('Reichstag', 'Berlin').
+where('Wie¿a Eiffla', 'Pary¿').
+where('Katedra Notre-Dame', 'Pary¿').
+where('Pa³ac Elizejski', 'Pary¿').
+where('Bazylika œw. Paw³a za Murami', 'Rzym').
+where('Koloseum', 'Rzym').
+where('Zamek Œwiêtego Anio³a', 'Rzym').
+where('Bazylika œw. Marka', 'Wenecja').
+where('Pa³ac Do¿ów', 'Wenecja').
+where('Sagrada Familia', 'Barcelona').
+where('Pa³ac Kryszta³owy', 'Madryt').
+where('Tower Bridge', 'Londyn').
+where('Pa³ac Buckingham', 'Londyn').
+where('Katedra Œwiêtego Paw³a', 'Londyn').
 
-obok('Polska', 'Niemcy').
-obok('Niemcy', 'Francja').
-obok('Francja', 'Wielka Brytania').
-obok('Francja', 'W³ochy').
-obok('Francja', 'Hiszpania').
+next_to('Polska', 'Niemcy').
+next_to('Niemcy', 'Francja').
+next_to('Francja', 'Wielka Brytania').
+next_to('Francja', 'W³ochy').
+next_to('Francja', 'Hiszpania').
 
 /*
 
 country   C
-city      T
+city/town T
 monument  M
 
 */
 
-zabytki_miasta(T, M) :- 
-  zabytek(M),
-  gdzie(M, T).
+city_monuments(T, M) :-
+  monument(M),
+  where(M, T).
 
-miasta_panstwa(C, T) :-
-  polozenie(T, C).
+country_cities(C, T) :-
+  location(T, C).
 
-zabytki_panstwa(C, M) :-
-  zabytek(M),
-  gdzie(M, T),
-  polozenie(T, C).
+country_monuments(C, M) :-
+  monument(M),
+  where(M, T),
+  location(T, C).
 
-gdzie_zabytek(M, T, C) :-
-  gdzie(M, T),
-  zabytek(M),
-  polozenie(T, C).
+where_monument(M, T, C) :-
+  where(M, T),
+  monument(M),
+  location(T, C).
 
-sasiad(C1, C2) :- 
-  obok(C1, C2);
-  obok(C2, C1).
+neighbour(C1, C2) :-
+  next_to(C1, C2);
+  next_to(C2, C1).
 
-zabytki_sasiadow_francji(M) :-
-  sasiad('Francja', C), 
-  polozenie(T, C), 
-  gdzie(M, T), 
-  zabytek(M),
-  miasto(T),
-  panstwo(C).
+mounuments_of_france_neighbours(M) :-
+  neighbour('Francja', C), 
+  location(T, C), 
+  where(M, T), 
+  monument(M),
+  town(T),
+  country(C).
 
-zabytki_kraju_gdzie_barcelona(M) :-
-  polozenie('Barcelona', C),
-  polozenie(T, C),
-  gdzie(M, T),
-  zabytek(M),
-  panstwo(C).
+mounuments_of_barcelonas_country(M) :-
+  location('Barcelona', C),
+  location(T, C),
+  where(M, T),
+  monument(M),
+  country(C).
   
-miasta_panstw_obok_niemiec(T, C) :-
-  sasiad('Niemcy', C),
-  polozenie(T, C).
+cities_of_countries_neighbouring_germany(T, C) :-
+  neighbour('Niemcy', C),
+  location(T, C).
   
-czy_sa_zabytki_w_anglii() :-
-  polozenie(T, 'Wielka Brytania'),
-  gdzie(M, T),
-  zabytek(M), 
+are_there_monuments_in_england() :-
+  location(T, 'Wielka Brytania'),
+  where(M, T),
+  monument(M), 
   !.
 
-czy_sa_kraje_obok_kraju_z_madrytem() :-
-  polozenie('Madryt', C),
-  sasiad(N, C),
-  panstwo(N),
+are_there_countries_neighbouring_madrids_country() :-
+  location('Madryt', C),
+  neighbour(N, C),
+  country(N),
   !.
 
 /*
 
 What monuments are in Berlin?
 
-1 ?- zabytki_miasta('Berlin', Zabytek).
-Zabytek = 'Brama Brandenburska' ;
-Zabytek = 'Reichstag'.
+1 ?- city_monuments('Berlin', monument).
+monument = 'Brama Brandenburska' ;
+monument = 'Reichstag'.
 
 ----------------------------
 
 What cities are in Spain?
 
-2 ?- miasta_panstwa('Hiszpania', Miasto).
-Miasto = 'Barcelona' ;
-Miasto = 'Madryt'.
+2 ?- country_cities('Hiszpania', town).
+town = 'Barcelona' ;
+town = 'Madryt'.
 
 ----------------------------
 
 What monuments are in Italy?
 
-3 ?- zabytki_panstwa('W³ochy', Zabytek).
-Zabytek = 'Bazylika œw. Paw³a za Murami' ;
-Zabytek = 'Koloseum' ;
-Zabytek = 'Zamek Œwiêtego Anio³a' ;
-Zabytek = 'Bazylika œw. Marka' ;
-Zabytek = 'Pa³ac Do¿ów' ;
+3 ?- country_monuments('W³ochy', monument).
+monument = 'Bazylika œw. Paw³a za Murami' ;
+monument = 'Koloseum' ;
+monument = 'Zamek Œwiêtego Anio³a' ;
+monument = 'Bazylika œw. Marka' ;
+monument = 'Pa³ac Do¿ów' ;
 false.
 
 ----------------------------
 
 In which city is the Basilica of St. Paul Outside the Walls?
 
-4 ?- gdzie_zabytek('Bazylika œw. Paw³a za Murami', Miasto, Panstwo).
-Miasto = 'Rzym',
-Panstwo = 'W³ochy'.
+4 ?- where_monument('Bazylika œw. Paw³a za Murami', town, country).
+town = 'Rzym',
+country = 'W³ochy'.
 
 ----------------------------
 
 What country is Sagrada Familia in?
 
-5 ?- gdzie_zabytek('Sagrada Familia', Miasto, Panstwo).
-Miasto = 'Barcelona',
-Panstwo = 'Hiszpania'.
+5 ?- where_monument('Sagrada Familia', town, country).
+town = 'Barcelona',
+country = 'Hiszpania'.
 
 ----------------------------
 
 What monuments can be visited in the countries neighboring France?
 
-6 ?- zabytki_sasiadow_francji(M).
+6 ?- mounuments_of_france_neighbours(M).
 M = 'Tower Bridge' ;
 M = 'Pa³ac Buckingham' ;
 M = 'Katedra Œwiêtego Paw³a' ;
@@ -234,7 +233,7 @@ M = 'Reichstag'.
 
 What monuments can be visited in the country where Barcelona is located?
 
-7 ?- zabytki_kraju_gdzie_barcelona(M).
+7 ?- mounuments_of_barcelonas_country(M).
 M = 'Sagrada Familia' ;
 M = 'Pa³ac Kryszta³owy'.
 
@@ -242,7 +241,7 @@ M = 'Pa³ac Kryszta³owy'.
 
 Which cities are in the countries neighboring Germany?
 
-8 ?- miasta_panstw_obok_niemiec(T, C).
+8 ?- cities_of_countries_neighbouring_germany(T, C).
 T = 'Pary¿',
 C = 'Francja' ;
 T = 'Warszawa',
@@ -254,14 +253,14 @@ C = 'Polska'.
 
 Are there any monuments in the UK?
 
-9 ?- czy_sa_zabytki_w_anglii().
+9 ?- are_there_monuments_in_england().
 true.
 
 ----------------------------
 
 Is there a country that neighbors the country in which Madrid is located?
 
-10 ?- czy_sa_kraje_obok_kraju_z_madrytem().
+10 ?- are_there_countries_neighbouring_madrids_country().
 true.
 
 */
