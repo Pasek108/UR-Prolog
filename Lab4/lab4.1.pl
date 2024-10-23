@@ -41,7 +41,6 @@ password([D1, D2, D3, D4, D5, D6, D7, D8, D9]) :-
   write(D1), write(D2), write(D3), write(D4), write(D5), write(D6), write(D7), write(D8), writeln(D9),
   fail.
 
-
 /*
 
 1 ?- password([D1, D2, D3, D4, D5, D6, D7, D8, D9]).
