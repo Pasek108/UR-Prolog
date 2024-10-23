@@ -12,15 +12,6 @@
 
 <br>
 
-<!--
-## Table of Contents
-- [About](#about)
-- [Technologies](#technologies)
-- [Key learnings](#key-learnings)
-- [Copyright](#copyright)
-
-<br>-->
-
 ## About :dart:
 These are my solutions to laboratory exercises carried out as part of the course "Języki i paradygmaty programowania" (Programming languages ​​and paradigms) in the Computer Science program at UR. 
 
@@ -38,14 +29,13 @@ The course covered the basics of the functional programming language Haskell ([U
 ## Key learnings :mortar_board:
 - Reading documentation
 - Using interpreter
-- Program compilation
-- Modules
-- Data types
-- Operators and defining new operators 
+- Creating and using knowledge bases
+- Rules
+- Backtracking
+- Arithmetic calculations
 - Lists and basic lists functions
-- String operations
-- File operations
-- Sorting and using a binary tree
+- Solving combinatorial problems
+
 
 <br>
 
